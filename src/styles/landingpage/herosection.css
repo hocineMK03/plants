@@ -1,0 +1,266 @@
+.hero-main {
+    width: 100%;
+    min-height: 100vh; /* Adjust height as needed */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  
+}
+
+
+
+.hero-content {
+    height: 90%;
+    width: 50%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-text{
+    height: auto;
+    width: 100%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-text h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    max-width: 60%; /* Ensure the heading doesn't exceed the container's width */
+    word-wrap: break-word; /* Allow the heading to break into multiple lines if needed */
+    font-weight: 600;
+    text-align: start;
+}
+.content-text p {
+    font-size: 1.5rem;
+    max-width: 60%; /* Ensure the paragraph doesn't exceed the container's width */
+    word-wrap: break-word; /* Allow the paragraph to break into multiple lines if needed */
+    text-align: start;
+}
+
+.content-goto{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.content-goto div{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    gap: 1rem;
+}
+.content-goto button{
+    margin: 0.5rem;
+
+    background-color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 0 #031926;
+    font-size: 18px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.content-goto button:hover {
+    box-shadow: 3px 3px 0 0 #031926; /* Maintain consistent shadow */
+     transform: translate(2px, 2px);
+    transition: .2s;
+}
+.content-goto div{
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.content-goto div :hover {
+    cursor: pointer;
+}
+.hero-image {
+    position: relative; /* Add positioning */
+    flex: 1; /* Take remaining space */
+    height: 100%; /* Match hero-container height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    border-radius: 100%;
+    background-color: var(--accent-color);
+    z-index: 1; /* Lower z-index to position it behind the image */
+    width: 45%; /* Adjust size as needed */
+    height: 40%; /* Adjust size as needed */
+}
+
+.hero-image img {
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    object-fit: cover; /* Cover the entire container */
+    position: relative; /* Ensure image stays on top */
+    z-index: 2; /* Set higher z-index to keep image above circle */
+}
+
+
+
+@media (max-width:1000px){
+    .circle{
+        height: 40%;
+        width: 50%;
+        border-radius: 100%;
+        right: 25%;
+    }
+    .hero-image img {
+        max-height: 80%; /* Ensure image doesn't exceed container height */
+        max-width: 80%; /* Ensure image doesn't exceed container width */
+        object-fit: cover; /* Cover the entire container */
+        position: relative; /* Ensure image stays on top */
+        z-index: 2; /* Set higher z-index to keep image above circle */
+    }
+    .content-text h1 {
+        margin: 1rem;
+        
+        max-width: 80%; /* Ensure the heading doesn't exceed the container's width */
+       
+    }
+    .content-text p {
+        
+        max-width: 80%; /* Ensure the paragraph doesn't exceed the container's width */
+        
+    }
+}
+
+
+@media(max-width:850px){
+    .content-text h1 {
+        margin: 1rem;
+        
+        max-width: 80%; /* Ensure the heading doesn't exceed the container's width */
+       
+    }
+    .content-text p {
+        
+        max-width: 80%; /* Ensure the paragraph doesn't exceed the container's width */
+        
+    }
+    .circle{
+        height: 30%;
+        width: 50%;
+        border-radius: 100%;
+        right: 25%;
+    }
+    .hero-image img {
+        max-height: 70%; /* Ensure image doesn't exceed container height */
+        max-width: 70%; /* Ensure image doesn't exceed container width */
+        object-fit: cover; /* Cover the entire container */
+        position: relative; /* Ensure image stays on top */
+        z-index: 2; /* Set higher z-index to keep image above circle */
+    }
+}
+
+@media (max-width:800px){
+    .hero-container{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-content{
+        width: 100%;
+        height: 50%;
+    }
+    .content-text{
+        height: 70%;
+    }
+    .content-text h1 {
+        margin: 1rem;
+        font-size: 2rem;
+        max-width: 70%; /* Ensure the heading doesn't exceed the container's width */
+        word-wrap: break-word; /* Allow the heading to break into multiple lines if needed */
+        font-weight: 600;
+        text-align: start;
+    }
+    .content-text p {
+        font-size: 1rem;
+        max-width: 70%; /* Ensure the paragraph doesn't exceed the container's width */
+        word-wrap: break-word; /* Allow the paragraph to break into multiple lines if needed */
+        text-align: start;
+    }
+    .hero-image {
+        position: relative; /* Add positioning */
+        flex: 1; /* Take remaining space */
+        height: 100%; /* Match hero-container height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle{
+        height: 40%;
+        width: 60%;
+        border-radius: 100%;
+        right: 25%;
+    }
+    .hero-image img {
+        max-height: 100%; /* Ensure image doesn't exceed container height */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        object-fit: contain; /* Cover the entire container */
+        position: relative; /* Ensure image stays on top */
+        z-index: 2; /* Set higher z-index to keep image above circle */
+    }
+    .content-goto{
+        width: 100%;
+    }
+    .content-goto div {
+      
+        width: 50%;
+        justify-content: flex-end;
+margin: 0 1rem;
+    }
+    .content-goto div svg{
+      
+        width: 70px;
+        
+    }
+    .content-goto button{
+        margin: 0.5rem;
+    
+        background-color: var(--accent-color);
+        text-decoration: none;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        padding: 0.7rem;
+        border: 1px solid #000;
+        border-radius: 5px;
+        box-shadow: 3px 3px 0 0 #031926;
+        font-size: 15px;
+      
+    }
+}

@@ -1,0 +1,102 @@
+.more{
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.more-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.more-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-10%); 
+}
+
+
+.more-image img{
+    width: 80%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+
+.more-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.more-text h1{
+    margin: 1rem;
+    font-size: 2.5rem;
+    max-width: 60%; /* Ensure the heading doesn't exceed the container's width */
+    word-wrap: break-word; /* Allow the heading to break into multiple lines if needed */
+    font-weight: 600;
+    text-align: start;
+}
+.more-text #moretext{
+    max-width: 60%; /* Ensure the paragraph doesn't exceed the container's width */
+    word-wrap: break-word; /* Allow the paragraph to break into multiple lines if needed */
+    text-align: start;
+}
+
+.more-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.more-feature{
+    display: flex;
+    align-items: center;
+    justify-content: ce7;
+    gap: 1rem;
+}
+
+.more-feature p{
+    width: 100%;
+    text-align: start;
+}
+
+
+
+.more-text button{
+    margin: 0.5rem;
+
+    background-color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 24px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 0 #031926;
+    font-size: 18px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.more-text button:hover {
+    box-shadow: 3px 3px 0 0 #031926; /* Maintain consistent shadow */
+     transform: translate(2px, 2px);
+    transition: .2s;
+}
+
+
+@media (max-width:750px){
+    .more-container{
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,95 @@
+.callto{
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
+    color: var(--text-color2);
+}
+
+
+
+.callto-wrapper{
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.callto-wrapper h1{
+    margin: 1rem;
+    max-width: 60%; /* Ensure the heading doesn't exceed the container's width */
+    word-wrap: break-word; /* Allow the heading to break into multiple lines if needed */
+    font-weight: 600;
+    text-align: center;
+}
+
+.subscribe{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.subscribe input{
+    margin: 0.5rem;
+
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: (--text-color);
+    padding: 12px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 0 #031926;
+    font-size: 1.4rem;
+    transition: .2s;
+    cursor: pointer;
+    flex: 1;
+    outline: none;
+}
+
+.subscribe input:active,
+.subscribe input:focus {
+    box-shadow: 3px 3px 0 0 #031926; /* Maintain consistent shadow */
+    transform: translate(2px, 2px);
+    transition: .2s;
+}
+
+.subscribe input:active:focus + button,
+.subscribe input:focus + button {
+    box-shadow: 3px 3px 0 0 #031926; /* Maintain consistent shadow */
+    transform: translate(2px, 2px);
+    transition: .2s;
+}
+
+.subscribe button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+
+    background-color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 0 #031926;
+    font-size: 1.4rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.subscribe button:hover {
+    box-shadow: 3px 3px 0 0 #031926; /* Maintain consistent shadow */
+     transform: translate(2px, 2px);
+    transition: .2s;
+}
