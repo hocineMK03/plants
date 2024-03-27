@@ -1,4 +1,10 @@
 ![landing page](src/assets/landingpage.png)
+
+
+
+
+
+# design taken from (https://dribbble.com/shots/19215902-Plant-Shop-Landing-Page)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
